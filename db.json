@@ -1,16 +1,313 @@
 {
-  "posts":[
+  "listfilm": [
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+      "name": "Harry Potter",
+      "time": "180 minute",
+      "date": "30/10/2023",
+      "Actors": "Herimone Granger, Harry Potter, Lord Voldemort...",
+      "Director": "J.K.Rowling, Rowli Ng J.K",
+      "Content": "Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry",
+      "image": "/src/assets/image/Harry potter.png",
+      "video": "/src/assets/trailer/Harry potter.mp4",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Avatar 2",
+      "time": "120 minute",
+      "date": "30/10/2023",
+      "Actors": "Sam Worthington, Zoe Saldana, Stephen Lang, Kate Winslet, Cliff Curtis, Victo Lopez...",
+      "Director": "Jame Cameron",
+      "image": "/src/assets/image/Avata 2.png",
+      "Content": "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.",
+      "video": "/src/assets/trailer/Avatar_ Dòng Chảy Của Nước _ Official Trailer.mp4"
+    },
+    {
+      "id": "3",
+      "name": "MORBIUS",
+      "time": "180 minute",
+      "date": "30/10/2023",
+      "Actors": "Jared Leto, Jared Harries, Tyress Gibson, Matt Smith, ...",
+      "Director": "Daniel Espinosa",
+      "image": "/src/assets/image/Morrbius.png",
+      "Content": "Biochemist Michael Morbius tries to cure himself of a rare blood disease, but he inadvertently infects himself with a form of vampirism instead.",
+      "video": "/src/assets/trailer/MORBIUS.mp4"
+    },
+    {
+      "id": "4",
+      "name": "The Avengers",
+      "time": "180 minute",
+      "date": "30/10/2023",
+      "Actors": "Robert Downey Jr., Chris Evans, Tom Hiddleston, Chris Hemsworth,...",
+      "Director": "Joss Whedon",
+      "image": "/src/assets/image/The Avanger.png",
+      "Content": "The fantasy film tells about a group of superheroes with specail abilities including: Iron man, God of Thunder, captain American, Hulk, Black Widow collective known as SHIELD. The purpose of SHIELD is to protect Earth from the destructive plots of evil forces form beyond the earth, whose leader is Loki, the trickster god and also the yuonger brother of the God of Thunder.",
+      "video": "/src/assets/trailer/The avenger.mp4"
+    },
+    {
+      "id": "5",
+      "name": "The Force Awakens ",
+      "time": "240 minute",
+      "date": "30/10/2023",
+      "Actors": "Daisy Ridley, John Boyega, Harrison Ford, Oscar Isaac, Kiran Shah,...",
+      "Director": "J.J. Abrams",
+      "image": "/src/assets/image/The Force Avakens.png",
+      "Content": "As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search for the one hope of restoring peace.",
+      "video": "/src/assets/trailer/Star Wars_ The Force Awakens Official Teaser.mp4"
+    },
+    {
+      "id": "6",
+      "name": " The Terminator 1984",
+      "time": "120 minute",
+      "date": "29/10/2023",
+      "Actors": "Arnold Schwarzenegger, Linda Hamiton, Michael Biehn, Earl Boen, Dick Miler,..",
+      "Director": "James Cameron",
+      "image": "/src/assets/image/The Terminator 1984.png",
+      "Content": " A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.",
+      "video": "/src/assets/trailer/The Terminator (1984) Trailer.mp4"
+    },
+    {
+      "id": "7",
+      "name": "Honey sweet",
+      "time": "120 minute",
+      "date": "29/10/2023",
+      "Actors": "Arnold Schwarzenegger, Linda Hamiton, Michael Biehn, Earl Boen, Dick Miler,..",
+      "Director": "James Cameron",
+      "image": "/src/assets/image/honey.png",
+      "Content": " A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.",
+      "video": "/src/assets/trailer/Honey Sweet - Official Trailer [ซับไทย].mp4"
+    },
+    {
+      "id": "8",
+      "name": "One Piece",
+      "time": "120 minute",
+      "date": "29/10/2023",
+      "Actors": "Arnold Schwarzenegger, Linda Hamiton, Michael Biehn, Earl Boen, Dick Miler,..",
+      "Director": "James Cameron",
+      "image": "/src/assets/image/Onc piece 2.png",
+      "Content": " A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.",
+      "video": "/src/assets/trailer/One Piece Trailer - Hoạt Hình Tiếng Việt.mp4"
+    },
+    {
+      "id": "9",
+      "name": "The Last 10 Years",
+      "time": "124 minute",
+      "date": "29/10/2023",
+      "Actors": "Nana Komatsu, Kentaro Sakaguchi, Yuki Yamada, Satoru Iguchi, Haru Kuroki",
+      "Director": "Michihito Fujii",
+      "image": "/src/assets/image/The Last 10 Years.jpg",
+      "Content": " Matsuri's 10-year life was short but full of love and faith after suffering from a rare incurable disease. A new life opens up when she allows herself to love and be loved.",
+      "video": "/src/assets/trailer/The Last 10 Years.mp4"
+    },
+    {
+      "id": "10",
+      "name": "Oppenheimer",
+      "time": "180 minute",
+      "date": "29/10/2023",
+      "Actors": "Cillian Murphy, Emily Blunt, Florence Pugh, Matt Damon, Dane DeHaan",
+      "Director": "JChristopher Nolan",
+      "image": "/src/assets/image/Oppenheimer.jpg",
+      "Content": " With the central character being J. Robert Oppenheimer, the theoretical physicist who headed the Los Alamos laboratory, during World War II. He played a key role in the Manhattan Project, pioneered the quest to develop nuclear weapons, and is considered one of the 'fathers of the atomic bomb.'",
+      "video": "/src/assets/trailer/Oppenheimer _ Official Trailer.mp4"
+    },
+    {
+      "id": "11",
+      "name": "My Precious",
+      "time": "120 minute",
+      "date": "29/10/2023",
+      "Actors": "Nanon Korapat Kirdpan, Rachanun Mahawan, Wachirawit Ruangwiwat, Pawat Chittsawangdee, Benyapa Jeenprasom",
+      "Director": "Naphat Jitweerapat, Kanittha Kwanyu",
+      "image": "/src/assets/image/My Precious.jpg",
+      "Content": " The school masterpiece 'THE GIRL WE USED TO PURSUE THAT YEAR' returns with the Thai version. The pure love recreated by the couple Nanon (as Tong) and Film (as Lin) will make the audience recall their first love in school. Tong, a special student, was moved to sit in front of Lin, a hard-working, bookish girl with a mysterious appearance and the object of pursuit for many boys in school. Through challenges from Tong's 'best friends', the two gradually realized the special feelings they had for each other.",
+      "video": "/src/assets/trailer/MY PRECIOUS (Official Trailer) _ In Cinemas 22 JUNE 2023.mp4"
+    },
+    {
+      "id": "12",
+      "name": "Finnick",
+      "time": "87 minute",
+      "date": "29/10/2023",
+      "Actors": "Vladimir Postnikov, Igor Yakovel, Valeri Solovyev, Sergey Mardar, Vladimir Maslakov",
+      "Director": "Denis Chernov",
+      "image": "/src/assets/image/Finnick.jpg",
+      "Content": " Finnick is someone who doesn't seem to care about making money from his house. Everything changes when a new family comes to his house and Finnick's tricks don't work at all. He meets Christine and unexplainable events begin to happen in the city. Finnick and Christine will have to cooperate and work together to solve the mystery of the events and save the city. At the end of that journey, will the girl Christine and the elf Finnick bring peace to the village and will 'another mystery' of Finnick be discovered?",
+      "video": "/src/assets/trailer/(Official Trailer) Finnick_ Ngôi Nhà Quái Vật.mp4"
+    },
+    {
+      "id": "13",
+      "name": "A Man Of Reason",
+      "time": "98 minute",
+      "date": "29/10/2023",
+      "Actors": "Lee Elijah, Park Yu-na, Kim Jun-han, Park Sung-woong, Kim Nam-gil",
+      "Director": "Jung Woo-Sung",
+      "image": "/src/assets/image/A Man Of Reason.jpg",
+      "Content": " The film revolves around the story of Soo Hyuk, a man who spent 10 years in prison to cover up for a gangster boss. After being released from prison, he discovers that he has become the father of a baby girl. Soo Hyuk wants to live a normal life with his ex-girlfriend and their daughter. He tries to cut ties with his old gang, but the gang's boss hires an assassin to silence Soo Hyuk and take his daughter hostage. Therefore, Soo Hyuk decided to find a way to take revenge on those who wanted to ruin his life",
+      "video": "/src/assets/trailer/A Man of Reason (2023) 보호자 - Movie Trailer - Far East Films.mp4"
+    },
+    {
+      "id": "14",
+      "name": "Blue Beetle",
+      "time": "128 minute",
+      "date": "29/10/2023",
+      "Actors": "George Lopez",
+      "Director": "Ángel Manuel Soto",
+      "image": "/src/assets/image/Blue Beetle.jpg",
+      "Content": " Newly graduated student Jaime Reyes returns home full of faith and hope for the future, only to realize that his hometown has changed a lot compared to before. As he searches for his purpose in this world, Jamie faces a turning point in his life when he realizes he possesses an ancient legacy of alien biotechnology: the Scarab. When the Scarab chose Jamie to be its host, he was given a set of armor with incredible super powers that no one could predict. Jamie's fate completely changes now that he is the superhero BLUE BEETLE.",
+      "video": "/src/assets/trailer/Blue Beetle  Official Trailer.mp4"
+    },
+    {
+      "id": "15",
+      "name": "The Moon",
+      "time": "129 minute",
+      "date": "29/10/2023",
+      "Actors": "Sol Kyung-gu, Doh Kyung-soo, Kim Hee-ae, Jo Han-chul, Park Byung-eun",
+      "Director": "Kim Yong-hwa",
+      "image": "/src/assets/image/The Moon.jpg",
+      "Content": " The Moon: The Final Mission takes a hypothetical timeline in 2029 when South Korea's Woori-ho spacecraft begins its journey to the Moon. This attracted the world's attention, but a solar flare engulfed the spacecraft, leaving only crew member Hwang Sun-woo (played by Doh Kyung Soo) trapped. stuck on the Moon. Former Naro Space Center flight director Kim Jae-gook (played by Sul Kyung Gu) and NASA lunar orbit director Yoon Moon-young (played by Kim Hee Ae) were involved in a battle. Fierce battle against the elements in space to bring Sun-woo back safely.",
+      "video": "/src/assets/trailer/THE MOON Official Trailer (2023).mp4"
+    },
+    {
+      "id": "16",
+      "name": "Gran Turismo",
+      "time": "134 minute",
+      "date": "29/10/2023",
+      "Actors": "David Harbour, Archie Madekwe, Orlando Bloom, Djimon Hounsou, Geri Halliwell",
+      "Director": "Neill Blomkamp",
+      "image": "/src/assets/image/Gran Turismo.jpg",
+      "Content": " Based on the true story of Jann Mardenborough, the film is an inspiring, dramatic and action-packed story about a Gran Turismo racing gamer's path to achieving his dream. From seemingly simple gaming skills, he won a series of Nissan competitions to become a real professional racing car driver.",
+      "video": "/src/assets/trailer/GRAN TURISMO  Official Trailer 2 HD.mp4"
     }
   ],
-  "comments" : [
+  "user": [
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "id": "bf61-d54d",
+      "name": "Hùng",
+      "lastname": "Hoàng",
+      "email": "hoanghung@gmail.com",
+      "password": "12345",
+      "pnumber": "034567890",
+      "gender": ""
+    },
+    {
+      "id": "c94c-e73e",
+      "name": "hung",
+      "lastname": "Duc",
+      "pnumber": "0111111111",
+      "email": "duchung@gmail.com",
+      "password": "12345",
+      "gender": ""
+    },
+    {
+      "id": "f262-0116",
+      "name": "Van",
+      "lastname": "Tran",
+      "pnumber": "023456789",
+      "email": "vantran@gmail.com",
+      "password": "12345",
+      "gender": ""
+    },
+    {
+      "id": "6257-470e",
+      "name": "Hùng",
+      "lastname": "Hoàng",
+      "email": "hoanghung@gmail.com",
+      "password": "12345",
+      "pnumber": "034567890",
+      "gender": "Male"
     }
-  ]
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "Cường",
+      "lastname": "Lê",
+      "email": "levietcuong@gmail.com",
+      "password": "12345",
+      "pnumber": "0384720935",
+      "gender": "Male"
+    }
+  ],
+  "comingSoon": [
+    {
+      "id": "1",
+      "name": "Giao lộ 8675",
+      "time": "107 minute",
+      "date": "ComingSoon",
+      "Actors": "Isaac, Rocker Nguyễn,La Thành, Emma Lê, Lợi Trần, Ngọc Hồ",
+      "Director": "Tân DS",
+      "image": "/src/assets/imagecoming/giaolo8675.jpg",
+      "Content": "The movie revolves around the story about the young people despite appearing at different contexts and Face your own problems, everyone have the same thing in commonyoung people are standing in front of the ''mountain'' must be conqueredself."
+    },
+    {
+      "id": "2",
+      "name": "The Exorcist: Believer",
+      "time": "111 minute",
+      "date": "comingSoon",
+      "Actors": "Jennifer Nettles, Ellen Burstyn, Leslie Odom Jr.",
+      "Director": "David Gordon Green",
+      "image": "/src/assets/imagecoming/quyam.jpg",
+      "Content": "The sequel to the 1973 film follows a 12-year-old girl possessed by a mysterious demonic entity, forcing her mother to seek the help of two priests to save her."
+    },
+    {
+      "id": "3",
+      "name": "Dune",
+      "time": "123 minute",
+      "date": "comingSoon",
+      "Actors": "Timothée Chalamet, Rebecca Ferguson, Zendaya",
+      "Director": "Denis Villeneuve",
+      "image": "/src/assets/imagecoming/dune.jpg",
+      "Content": "It is an epic, emotional journey of Paul Atreides - an outstandingly talented young man born with a great mission beyond his own understanding. Paul had to travel to the most dangerous planet in the Universe to ensure the future of his family and his people. When cruel forces begin to engage in conflict to monopolize the planet's most valuable resource - the precious fuel capable of activating humanity's greatest potential - only those who Only by conquering your fear can you survive..."
+    },
+    {
+      "id": "4",
+      "name": "Love again",
+      "time": "180 minute",
+      "date": "ComingSoon",
+      "Actors": "Priyanka Chopra Jonas, Sam Heughan, Russell Tovey",
+      "Director": "Jim Strouse",
+      "image": "/src/assets/imagecoming/loveagain.jpg",
+      "Content": "Love will come to those who believe. #LoveAgainMovie, a healing movie for those who have been, are and will be in love. Starring Priyanka Chopra and Sam Heughan, plus Céline Dion and her new song."
+    },
+    {
+      "id": "5",
+      "name": "Kraven the Hunter",
+      "time": "125 minute",
+      "date": "ComingSoon",
+      "Actors": "Aaron Taylor-Johnson, Russell Crowe, Ariana DeBose",
+      "Director": "J.C. Chandor",
+      "image": "/src/assets/imagecoming/kravethehunter.jpg",
+      "Content": "Russian immigrant Sergei Kravinoff is on a mission to prove that he is the world's greatest hunter."
+    },
+    {
+      "id": "6",
+      "name": "Kumanthong",
+      "time": "180 minute",
+      "date": "ComingSoon",
+      "Actors": "Kuan Denkhun Ngamnet, Pinky Savika Chaiyadej, Care Panisara Rikulsurakan",
+      "Director": "Thitipan Raksasat",
+      "image": "/src/assets/imagecoming/kumathong.jpg",
+      "Content": "Ging took his son on vacation to a wooden house in the middle of the forest. However, the boy was kidnapped in the middle of the night. After many search efforts, the only clue in the case pointed to a man named In, who worked as a mortician at the temple."
+    },
+    {
+      "id": "7",
+      "name": "Thành phố ngủ gật",
+      "time": "73 minutes",
+      "date": "ComingSoon",
+      "Actors": "Quốc Toàn, Minh Hiền, Đức Trí, Tạ Xuân Tuế, Ba Trường,...",
+      "Director": "Lương Đình Dũng",
+      "image": "/src/assets/imagecoming/thanhphongugat.jpg",
+      "Content": "Nhân vật chính là một chàng thanh niên 26 tuổi, sống đơn độc giữa trung tâm thành phố nhộn nhịp, mưu sinh bằng nghề mổ gà. Một ngày, sự xuất hiện của nhóm giang hồ và một cô gái điếm đã tác động đến cuộc sống của anh. Điều đó đã làm cho bản năng hoang dã của chàng thanh niên trỗi dậy không kiểm soát."
+    },
+    {
+      "id": "8",
+      "name": "AQUAMAN",
+      "time": "100 minutes",
+      "date": "ComingSoon",
+      "Actors": "Jason Momoa, Ben Affleck, Patrick Wilson,...",
+      "Director": "James Wan",
+      "image": "/src/assets/imagecoming/aquaman.jpg",
+      "Content": "Đạo diễn James Wan và Jason Momoa trong vai Aquaman—cùng với Patrick Wilson, Amber Heard, Yahya Abdul-Mateen II và Nicole Kidman sẽ trở lại trong phần tiếp theo của bộ phim DC có doanh thu cao nhất mọi thời đại “Aquaman Và Vương Quốc Thất Lạc (tựa gốc: Aquaman and the Lost Kingdom)”."
+    }
+  ],
+  "listbooking": [],
+  "userlist": []
 }
