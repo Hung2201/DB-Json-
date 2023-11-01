@@ -6,11 +6,10 @@ const port = process.env.PORT || 3000;
 
 server.use(middlewares);
 server.use(router);
-const app = express();
-app.use(bodyParser.json());
+server.use(jsonServer.bodyParser);
 
 
-app.post('/payment', async (req, res) => {
+server.post('/payment', async (req, res) => {
     try {
         let partnerCode = "MOMO";
         let accessKey = "F8BBA842ECF85";
