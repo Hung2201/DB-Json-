@@ -7,7 +7,7 @@
       "Actors": "Herimone Granger, Harry Potter, Lord Voldemort...",
       "Director": "J.K.Rowling, Rowli Ng J.K",
       "Content": "Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry",
-      "image": "/src/assets/image/Harry potter.png",
+      "image": "/src/assets/image/HarryPotter.jpg",
       "video": "/src/assets/trailer/Harry potter.mp4",
       "id": "1"
     },
@@ -46,7 +46,7 @@
     },
     {
       "id": "5",
-      "name": "The Force Awakens ",
+      "name": "The Force Awakens",
       "time": "240 minute",
       "date": "30/10/2023",
       "Actors": "Daisy Ridley, John Boyega, Harrison Ford, Oscar Isaac, Kiran Shah,...",
@@ -179,24 +179,6 @@
   ],
   "user": [
     {
-      "id": "bf61-d54d",
-      "name": "Hùng",
-      "lastname": "Hoàng",
-      "email": "hoanghung@gmail.com",
-      "password": "12345",
-      "pnumber": "034567890",
-      "gender": ""
-    },
-    {
-      "id": "c94c-e73e",
-      "name": "hung",
-      "lastname": "Duc",
-      "pnumber": "0111111111",
-      "email": "duchung@gmail.com",
-      "password": "12345",
-      "gender": ""
-    },
-    {
       "id": "f262-0116",
       "name": "Van",
       "lastname": "Tran",
@@ -213,6 +195,24 @@
       "password": "12345",
       "pnumber": "034567890",
       "gender": "Male"
+    },
+    {
+      "id": "1fcb-c7a4",
+      "name": "Trần",
+      "lastname": "Hùng",
+      "pnumber": "0382870032",
+      "email": "hung.tran25@gmail.org",
+      "password": "123456",
+      "gender": "Male"
+    },
+    {
+      "id": "5e68-afe2",
+      "name": "Duc",
+      "lastname": "Hùng",
+      "pnumber": "0382870032",
+      "email": "hung.tran25@student.passerellesnumeriques.org",
+      "password": "123456",
+      "gender": "Male"
     }
   ],
   "admin": [
@@ -221,6 +221,15 @@
       "name": "Cường",
       "lastname": "Lê",
       "email": "levietcuong@gmail.com",
+      "password": "12345",
+      "pnumber": "0384720935",
+      "gender": "Male"
+    },
+    {
+      "id": "2",
+      "name": "Hùng",
+      "lastname": "Hoàng",
+      "email": "hoanghung2003@gmail.com",
       "password": "12345",
       "pnumber": "0384720935",
       "gender": "Male"
@@ -308,6 +317,98 @@
       "Content": "Đạo diễn James Wan và Jason Momoa trong vai Aquaman—cùng với Patrick Wilson, Amber Heard, Yahya Abdul-Mateen II và Nicole Kidman sẽ trở lại trong phần tiếp theo của bộ phim DC có doanh thu cao nhất mọi thời đại “Aquaman Và Vương Quốc Thất Lạc (tựa gốc: Aquaman and the Lost Kingdom)”."
     }
   ],
-  "listbooking": [],
-  "userlist": []
+  "listbooking": [
+    {
+      "idBooking": "1",
+      "idUser": "6257-470e",
+      "nameUser": "Hùng",
+      "email": "hoanghung@gmail.com",
+      "phoneNumber": "034567890",
+      "filmName": "Harry Potter",
+      "dateBooking": "20/10/2023",
+      "dateWatch": "30/10/2023",
+      "time": "18:00",
+      "char": "A1",
+      "money": "90.000đ"
+    },
+    {
+      "idBooking": "2",
+      "idUser": "6257-470e",
+      "nameUser": "Hùng",
+      "email": "hoanghung@gmail.com",
+      "phoneNumber": "034567890",
+      "filmName": "Harry Potter",
+      "dateBooking": "20/10/2023",
+      "dateWatch": "30/10/2023",
+      "time": "18:00",
+      "char": "A1",
+      "money": "90.000đ"
+    },
+    {
+      "idBooking": "3",
+      "idUser": "6257-470e",
+      "nameUser": "Hùng",
+      "email": "hoanghung@gmail.com",
+      "phoneNumber": "034567890",
+      "filmName": "Harry Potter",
+      "dateBooking": "20/10/2023",
+      "dateWatch": "30/10/2023",
+      "time": "18:00",
+      "char": "A1",
+      "money": "90.000đ"
+    },
+    {
+      "idBooking": "4",
+      "idUser": "6257-470e",
+      "nameUser": "Hùng",
+      "email": "hoanghung@gmail.com",
+      "phoneNumber": "034567890",
+      "filmName": "Harry Potter",
+      "dateBooking": "20/10/2023",
+      "dateWatch": "30/10/2023",
+      "time": "18:00",
+      "char": "A1",
+      "money": "90.000đ"
+    },
+    {
+      "idBooking": "5",
+      "idUser": "6257-470e",
+      "nameUser": "Hùng",
+      "email": "hoanghung@gmail.com",
+      "phoneNumber": "034567890",
+      "filmName": "Harry Potter",
+      "dateBooking": "20/10/2023",
+      "dateWatch": "30/10/2023",
+      "time": "18:00",
+      "char": "A1",
+      "money": "90.000đ"
+    },
+    {
+      "idBooking": "6",
+      "idUser": "6257-470e",
+      "nameUser": "Hùng",
+      "email": "hoanghung@gmail.com",
+      "phoneNumber": "034567890",
+      "filmName": "Harry Potter",
+      "dateBooking": "20/10/2023",
+      "dateWatch": "30/10/2023",
+      "time": "18:00",
+      "char": "A1",
+      "money": "90.000đ"
+    }
+    ,
+    {
+      "idBooking": "7",
+      "idUser": "5e68-afe2",
+      "nameUser": "Duc",
+      "email": "hung.tran25@student.passerellesnumeriques.org",
+      "phoneNumber": "034567890",
+      "filmName": "Morribius",
+      "dateBooking": "20/10/2023",
+      "dateWatch": "30/10/2023",
+      "time": "18:00",
+      "char": "A1",
+      "money": "90.000đ"
+    }
+  ]
 }
