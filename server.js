@@ -18,11 +18,11 @@ server.post('/payment', async (req, res) => {
         let orderId = new Date().getTime() + ":0123456778";
         let orderInfo = "Thanh toán qua ví MoMo";
         let redirectUrl = "http://127.0.0.1:5500/index.html";
-        let ipnUrl = "https://momo.vn";
+        let ipnUrl = "http://127.0.0.1:5500/index.html";
         // let ipnUrl = redirectUrl = "https://webhook.site/454e7b77-f177-4ece-8236-ddf1c26ba7f8";
-        let amount = 18000
-        // let requestType = "payWithATM";
-        let requestType = "captureWallet";
+        let amount = "50000";
+        let requestType = "payWithATM";
+        // let requestType = "captureWallet";
         let extraData = ""; //pass empty value if your merchant does not have stores
 
         //before sign HMAC SHA256 with format
