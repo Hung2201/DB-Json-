@@ -9,19 +9,17 @@ server.use(jsonServer.bodyParser);
 
 server.post('/payment', async (req, res) => {
     try {
-        // láy data
-        const clientData = req.body;
-        console.log(clientData);
+        let client = req.body;
         let partnerCode = "MOMO";
         let accessKey = "F8BBA842ECF85";
         let secretkey = "K951B6PE1waDMi640xX08PD3vg6EkVlz";
         let requestId = partnerCode + new Date().getTime() + "id";
         let orderId = new Date().getTime() + ":0123456778";
         let orderInfo = "Thanh toán qua ví MoMo";
-        let redirectUrl = "https://gentle-klepon-9b14a9.netlify.app/";
-        let ipnUrl = "https://gentle-klepon-9b14a9.netlify.app/";
+        let redirectUrl = "http://127.0.0.1:5501/index.html";
+        let ipnUrl = "http://127.0.0.1:5501/index.html";
         // let ipnUrl = redirectUrl = "https://webhook.site/454e7b77-f177-4ece-8236-ddf1c26ba7f8";
-        let amount = clientData.data;
+        let amount = client.amount;
         // let requestType = "payWithATM";
         let requestType = "captureWallet";
         let extraData = ""; //pass empty value if your merchant does not have stores
@@ -91,28 +89,6 @@ server.post('/payment', async (req, res) => {
                     const payUrl = JSON.parse(body).payUrl;
                     resolve(payUrl);
                     console.log(body);
-                    // data fetch
-                    const dataToSend = {
-                        idUser: clientData.idUser,
-                        money: clientData.amount
-                    };
-                    
-                    fetch("https://mor-start.onrender.com/listbooking", {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify(dataToSend)
-                    })
-                        .then((responseData) => {
-                            // Xử lý phản hồi từ máy chủ (nếu có)
-                            console.log(responseData);
-                        })
-                        .catch((error) => {
-                            console.error("Error:", error);
-                        });
-
-                //------------------
                 });
                 res.on("end", () => {
                     console.log("Thanh toán thành công");
