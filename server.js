@@ -7,7 +7,7 @@ server.use(middlewares);
 server.use(jsonServer.bodyParser);
 
 
-server.post('/payment', async (req, res) => {
+server.post('/listbooking', async (req, res) => {
     try {
         let partnerCode = "MOMO";
         let accessKey = "F8BBA842ECF85";
@@ -18,7 +18,7 @@ server.post('/payment', async (req, res) => {
         let redirectUrl = "http://127.0.0.1:5501/index.html";
         let ipnUrl = "http://127.0.0.1:5501/index.html";
         // let ipnUrl = redirectUrl = "https://webhook.site/454e7b77-f177-4ece-8236-ddf1c26ba7f8";
-        let amount = "50000";
+        let amount = req.body;
         // let requestType = "payWithATM";
         let requestType = "captureWallet";
         let extraData = ""; //pass empty value if your merchant does not have stores
