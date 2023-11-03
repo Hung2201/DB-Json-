@@ -15,10 +15,10 @@ server.post('/payment', async (req, res) => {
         let requestId = partnerCode + new Date().getTime() + "id";
         let orderId = new Date().getTime() + ":0123456778";
         let orderInfo = "Thanh toán qua ví MoMo";
-        let redirectUrl = "http://127.0.0.1:5501/index.html";
-        let ipnUrl = "http://127.0.0.1:5501/index.html";
+        let redirectUrl = "https://gentle-klepon-9b14a9.netlify.app/";
+        let ipnUrl = "https://gentle-klepon-9b14a9.netlify.app/";
         // let ipnUrl = redirectUrl = "https://webhook.site/454e7b77-f177-4ece-8236-ddf1c26ba7f8";
-        let amount = req.body;
+        let amount = "90000";
         // let requestType = "payWithATM";
         let requestType = "captureWallet";
         let extraData = ""; //pass empty value if your merchant does not have stores
