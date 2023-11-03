@@ -10,14 +10,15 @@ server.use(jsonServer.bodyParser);
 server.post('/payment', async (req, res) => {
     try {
         let client = req.body;
+        console.log(client);
         let partnerCode = "MOMO";
         let accessKey = "F8BBA842ECF85";
         let secretkey = "K951B6PE1waDMi640xX08PD3vg6EkVlz";
         let requestId = partnerCode + new Date().getTime() + "id";
         let orderId = new Date().getTime() + ":0123456778";
         let orderInfo = "Thanh toán qua ví MoMo";
-        let redirectUrl = "http://127.0.0.1:5501/index.html";
-        let ipnUrl = "http://127.0.0.1:5501/index.html";
+        let redirectUrl = "https://gentle-klepon-9b14a9.netlify.app/";
+        let ipnUrl = "https://gentle-klepon-9b14a9.netlify.app/";
         // let ipnUrl = redirectUrl = "https://webhook.site/454e7b77-f177-4ece-8236-ddf1c26ba7f8";
         let amount = client.amount;
         // let requestType = "payWithATM";
@@ -89,6 +90,32 @@ server.post('/payment', async (req, res) => {
                     const payUrl = JSON.parse(body).payUrl;
                     resolve(payUrl);
                     console.log(body);
+                    // Gửi yêu cầu POST để đẩy dữ liệu vào listbookin
+                        fetch("https://mor-start.onrender.com/listbooking", {
+                            method: "POST", // Hoặc "GET" tùy thuộc vào yêu cầu của bạn
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({
+                                // Dữ liệu cần gửi trong yêu cầu
+                                amount,
+                                idUser: client.idUser
+                            })
+                        })
+                        .then((response) => {
+                            if (!response.ok) {
+                                throw new Error("Network response was not ok");
+                            }
+                            return response.json(); // Chuyển đổi dữ liệu JSON (nếu có phản hồi từ máy chủ)
+                        })
+                        .then((responseData) => {
+                            // Xử lý phản hồi từ yêu cầu bổ sung
+                            console.log(responseData);
+                        })
+                        .catch((error) => {
+                            console.error("Error:", error);
+                        });
+        
                 });
                 res.on("end", () => {
                     console.log("Thanh toán thành công");
