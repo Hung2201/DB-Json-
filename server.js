@@ -7,7 +7,7 @@ server.use(middlewares);
 server.use(jsonServer.bodyParser);
 
 
-server.post('/listbooking', async (req, res) => {
+server.post('/payment', async (req, res) => {
     try {
         let partnerCode = "MOMO";
         let accessKey = "F8BBA842ECF85";
