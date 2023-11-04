@@ -17,10 +17,10 @@ server.post('/payment', async (req, res) => {
         let requestId = partnerCode + new Date().getTime() + "id";
         let orderId = new Date().getTime() + ":0123456778";
         let orderInfo = "Thanh toán qua ví MoMo";
-        let redirectUrl = "https://gentle-klepon-9b14a9.netlify.app/";
-        let ipnUrl = "https://gentle-klepon-9b14a9.netlify.app/";
+        let redirectUrl = "https://gentle-klepon-9b14a9.netlify.app";
+        let ipnUrl = "https://gentle-klepon-9b14a9.netlify.app";
         // let ipnUrl = redirectUrl = "https://webhook.site/454e7b77-f177-4ece-8236-ddf1c26ba7f8";
-        let amount = client.amount;
+        let amount = client.money;
         // let requestType = "payWithATM";
         let requestType = "captureWallet";
         let extraData = ""; //pass empty value if your merchant does not have stores
@@ -90,34 +90,29 @@ server.post('/payment', async (req, res) => {
                     const payUrl = JSON.parse(body).payUrl;
                     resolve(payUrl);
                     console.log(body);
-                    // Gửi yêu cầu POST để đẩy dữ liệu vào listbookin
-                        fetch("https://mor-start.onrender.com/listbooking", {
-                            method: "POST", // Hoặc "GET" tùy thuộc vào yêu cầu của bạn
+                    fetch("https://mor-start.onrender.com/listbooking", {
+                            method: "POST",
                             headers: {
                                 "Content-Type": "application/json",
                             },
-                            body: JSON.stringify({
-                                // Dữ liệu cần gửi trong yêu cầu
-                                amount,
-                                idUser: client.idUser
-                            })
+                            body: JSON.stringify(client) // Make sure `client` contains the data you want to send
                         })
                         .then((response) => {
-                            if (!response.ok) {
-                                throw new Error("Network response was not ok");
+                            if (response.ok) {
+                                console.log("Data sent successfully");
+                            } else {
+                                response.text().then((errorText) => {
+                                    console.error("Error không đẩy được data:", response.status, errorText);
+                                });
                             }
-                            return response.json(); // Chuyển đổi dữ liệu JSON (nếu có phản hồi từ máy chủ)
-                        })
-                        .then((responseData) => {
-                            // Xử lý phản hồi từ yêu cầu bổ sung
-                            console.log(responseData);
                         })
                         .catch((error) => {
-                            console.error("Error:", error);
+                            console.error("Request error:", error);
                         });
         
                 });
                 res.on("end", () => {
+
                     console.log("Thanh toán thành công");
                 });
             });
