@@ -91,9 +91,13 @@ server.post('/payment', async (req, res) => {
                     resolve(payUrl);
                 });
                 res.on("end", () => {
-                    const dbData = JSON.parse(fs.readFileSync('db.json', 'utf8'));
-                    dbData.listbooking.push(client);
-                    fs.writeFileSync('db.json', JSON.stringify(dbData, null, 2), 'utf8');
+                    fetch("https://mor-start.onrender.com/listbooking", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(client) // Make sure `client` contains the data you want to send
+                    })
                     console.log("Thanh toán thành công");
                 });
             });
