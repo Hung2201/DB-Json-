@@ -1,6 +1,7 @@
 const jsonServer = require('json-server');
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
+const fs = require('fs');
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
@@ -10,7 +11,6 @@ server.use(jsonServer.bodyParser);
 server.post('/payment', async (req, res) => {
     try {
         let client = req.body;
-        console.log(client);
         let partnerCode = "MOMO";
         let accessKey = "F8BBA842ECF85";
         let secretkey = "K951B6PE1waDMi640xX08PD3vg6EkVlz";
@@ -86,33 +86,14 @@ server.post('/payment', async (req, res) => {
         const payUrl = await new Promise((resolve, reject) => {
             const reqq = https.request(options, (res) => {
                 res.setEncoding("utf8");
-                res.on("data", (body) => {
+                res.on("data", async (body) => {
                     const payUrl = JSON.parse(body).payUrl;
                     resolve(payUrl);
-                    console.log(body);
-                    fetch("https://mor-start.onrender.com/listbooking", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json",
-                            },
-                            body: JSON.stringify(client) // Make sure `client` contains the data you want to send
-                        })
-                        .then((response) => {
-                            if (response.ok) {
-                                console.log("Data sent successfully");
-                            } else {
-                                response.text().then((errorText) => {
-                                    console.error("Error không đẩy được data:", response.status, errorText);
-                                });
-                            }
-                        })
-                        .catch((error) => {
-                            console.error("Request error:", error);
-                        });
-        
                 });
                 res.on("end", () => {
-
+                    const dbData = JSON.parse(fs.readFileSync('db.json', 'utf8'));
+                    dbData.listbooking.push(client);
+                    fs.writeFileSync('db.json', JSON.stringify(dbData, null, 2), 'utf8');
                     console.log("Thanh toán thành công");
                 });
             });
