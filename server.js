@@ -3,6 +3,7 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const fs = require('fs');
 const middlewares = jsonServer.defaults();
+const axios = require('axios');
 
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
@@ -90,15 +91,12 @@ server.post('/payment', async (req, res) => {
                     const payUrl = JSON.parse(body).payUrl;
                     resolve(payUrl);
                 });
-                res.on("end", () => {
-                    fetch("https://mor-start.onrender.com/listbooking", {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify(client) // Make sure `client` contains the data you want to send
+                res.on("end", async () => {
+                    await axios.post("https://mor-start.onrender.com/listbooking", client).then(resp => {
+                        console.log('Thanh toán thành công');
+                    }).catch(error => {
+                        console.log(error);
                     })
-                    console.log("Thanh toán thành công");
                 });
             });
 
