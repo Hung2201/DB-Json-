@@ -319,7 +319,7 @@
   ],
   "listbooking": [
     {
-      "idBooking": "1",
+      "id": "1",
       "idUser": "6257-470e",
       "nameUser": "Hùng",
       "lastname": "Hoàng",
@@ -333,7 +333,7 @@
       "money": "90.000đ"
     },
     {
-      "idBooking": "2",
+      "id": "2",
       "idUser": "6257-470e",
       "nameUser": "Hùng",
       "lastname": "Hoàng",
@@ -347,7 +347,7 @@
       "money": "90.000đ"
     },
     {
-      "idBooking": "3",
+      "id": "3",
       "idUser": "6257-470e",
       "nameUser": "Hùng",
       "lastname": "Hoàng",
@@ -361,7 +361,7 @@
       "money": "90.000đ"
     },
     {
-      "idBooking": "4",
+      "id": "4",
       "idUser": "6257-470e",
       "nameUser": "Hùng",
       "lastname": "Hoàng",
@@ -375,7 +375,7 @@
       "money": "90.000đ"
     },
     {
-      "idBooking": "5",
+      "id": "5",
       "idUser": "6257-470e",
       "nameUser": "Hùng",
       "lastname": "Hoàng",
@@ -389,7 +389,7 @@
       "money": "90.000đ"
     },
     {
-      "idBooking": "6",
+      "id": "6",
       "idUser": "6257-470e",
       "nameUser": "Hùng",
       "lastname": "Hoàng",
@@ -404,7 +404,7 @@
     }
     ,
     {
-      "idBooking": "7",
+      "id": "7",
       "idUser": "5e68-afe2",
       "nameUser": "Duc",
       "lastname": "Hùng",
@@ -416,6 +416,24 @@
       "time": "18:00",
       "char": "A1",
       "money": "90.000đ"
+    },
+    {
+      "id": "bcd74bce50bd",
+      "idUser": "f262-0116",
+      "nameUser": "Van",
+      "lastname": "Tran",
+      "email": "vantran@gmail.com",
+      "phoneNumber": "023456789",
+      "filmName": "MORBIUS",
+      "dateBooking": "08/11/2023",
+      "dateWatch": "8/11/2023",
+      "time": [
+        "21:00"
+      ],
+      "char": [
+        "F9"
+      ],
+      "money": "90000VND"
     }
   ]
 }
